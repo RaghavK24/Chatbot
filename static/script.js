@@ -51,7 +51,7 @@ const generateResponse = (chatElement) => {
     const userMessage = messageElement.textContent;
 
     // Make an AJAX request to the Flask server
-    fetch("/generate-response", {
+    fetch("/chatbot", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
